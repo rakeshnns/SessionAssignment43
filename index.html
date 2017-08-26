@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Assignment 4.3</title>
+	 <!-- CSS styling start -->
+	 <style>
+	    /*-- rot class div styling background and padding. --*/
+	  div.rot{
+	     background: red;                                  /* For browsers that do not support gradients */
+         background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+         background: -o-linear-gradient(red, yellow);      /* For Opera 11.1 to 12.0 */
+         background: -moz-linear-gradient(red, yellow);    /* For Firefox 3.6 to 15 */
+         background: linear-gradient(#8ce0ea, #d1f5f9);    /* Applying liner gradient */
+		 padding: 100px;
+	    }
+		/*-- h1 styling background and padding. --*/
+	 h1 {
+	     text-align: center;
+		 color: darkblue;
+	    }
+		/*-- wiki class applying multi column format. --*/
+     div.wiki{
+	     -webkit-column-count: 3;                          /* Chrome, Safari, Opera */
+         -moz-column-count: 3;                             /* Firefox */
+         column-count: 3;
+		 -webkit-column-rule: 4px outset lightblue;        /* Chrome, Safari, Opera */
+         -moz-column-rule: 4px outset lightblue;           /* Firefox */
+         column-rule: 4px outset lightblue;
+        }	
+        /*-- image element applying transition of width and height for 5s. --*/	
+	 img{
+	 	 display: block;
+         margin: auto;
+		 transition: width 5s, height 5s;
+		 
+	    }
+	    /*--Keyframes start --*/    	
+	 /* Safari 4.0 - 8.0 */
+     @-webkit-keyframes rotation {
+         0%   {transform : rotate(0deg)}
+		 10%  {transform : rotate(36deg)}
+		 20%  {transform : rotate(72deg)}
+         30%  {transform : rotate(108deg)}
+		 40%  {transform : rotate(144deg)} 
+         50%  {transform : rotate(180deg)}
+		 60%  {transform : rotate(216deg)}
+         70%  {transform : rotate(252deg)}
+		 80%  {transform : rotate(288deg)}
+		 90%  {transform : rotate(324deg)}
+         100% {transform : rotate(360deg)}
+        }
+
+    /* Standard syntax */
+     @keyframes rotation {
+         0%   {transform : rotate(0deg)}
+		 10%  {transform : rotate(36deg)}
+		 20%  {transform : rotate(72deg)}
+         30%  {transform : rotate(108deg)}
+		 40%  {transform : rotate(144deg)} 
+         50%  {transform : rotate(180deg)}
+		 60%  {transform : rotate(216deg)}
+         70%  {transform : rotate(252deg)}
+		 80%  {transform : rotate(288deg)}
+		 90%  {transform : rotate(324deg)}
+         100% {transform : rotate(360deg)}
+        }	
+	    /*--Keyframes end --*/ 
+		/*-- CSS part which perform transition, transform and animation --*/
+	 img:hover{
+	    border-radius:50%;
+		width:500px;
+		height:400px;
+		animation-name: rotation;
+		animation-duration: 5s;
+		}
+	 </style>
+	 <!-- CSS styling END -->
+  </head>
+  <body>
+    <!-- Header --> 
+    <h1>DOORDASHAN</h1>
+	<!-- Image container -->
+	<div class="rot">
+	    <img src="doordarshan.png" width="200px" height = "200px" alt ="rotate">
+	</div>
+	<!-- Content Container -->
+	<div class="wiki">
+	Doordarshan had a modest beginning as an experimental telecast starting in Delhi on 15 September 1959, with a small transmitter and a makeshift studio. Regular daily transmission started in 1965 as a part of All India Radio. 
+	Doordarshan began a five-minute news bulletin in the same year. Pratima Puri was the first newsreader. Salma Sultan joined Doordarshan in 1967, and later became a news anchor. The television service was extended to Bombay (now Mumbai) and Amritsar in 1972.
+    Up until 1975, only seven Indian cities had a television service and Doordarshan remained the sole provider of television in India. Television services were separated from radio on 1 April 1976.
+	[3] Each office of All India Radio and Doordarshan was placed under the management of two separate Director Generals in New Delhi.
+    Finally, in 1982, Doordarshan took shape as a National Broadcaster. Krishi Darshan was the first program telecast on Doordarshan. It commenced on 26 January 1967 and is one of the longest running programs on Indian television.[4]
+	</div>
+  </body>  
+  
+</html>
